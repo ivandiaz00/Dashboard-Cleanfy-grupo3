@@ -3,9 +3,11 @@ import image from '../assets/images/cleanfy-logo.png';
 import {Link,Route,Routes} from 'react-router-dom';
 import Chart from './Chart';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
+import CategoriesInDb from './GenresInDb';
+import LastProductInDb from './LastProductInDb';
 import NotFound from './NotFound';
+import SearchUsers from './SearchUsers';
+import SearchProduct from './SearchProduct';
 
 function SideBar(){
     return(
@@ -38,7 +40,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="GenresInDb">
+                    <Link className="nav-link collapsed" to="CategoriesInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Secciones</span>
                     </Link>
@@ -46,7 +48,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="LastMovieInDb">
+                    <Link className="nav-link" to="LastProductInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Último Producto</span></Link>
                 </li>
@@ -66,10 +68,11 @@ function SideBar(){
             <Routes>
                 <Route  exact path='/' element = {<ContentWrapper/>} />
                 <Route   path='/Chart' element = {<Chart/>} />
-                <Route  path='/GenresInDb' element = {<GenresInDb/>} />
-                <Route  path='/LastMovieInDb' element = {<LastMovieInDb/>} />
+                <Route  path='/CategoriesInDb' element = {<CategoriesInDb/>} />
+                <Route  path='/LastProductInDb' element = {<LastProductInDb/>} />
                 <Route path="*" element={<NotFound />} />
-
+                <Route  path='/SearchUsers' element = {<SearchUsers/>} />
+                <Route  path='/SearchPizzas' element = {<SearchProduct/>} />
             </Routes>
 
 

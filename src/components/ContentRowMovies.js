@@ -8,7 +8,7 @@ import SmallCard from './SmallCard';
 let moviesInDB = {
     title: 'Productos',
     color: 'primary', 
-    quantity: 2,
+    quantity: 20,
     icon: 'fa-clipboard-list'
 }
 
@@ -17,7 +17,7 @@ let moviesInDB = {
 let totalAwards = {
     title:' Usuarios', 
     color:'success', 
-    quantity: 55,
+    quantity:88,
     icon:'fa-award'
 }
 
@@ -29,6 +29,7 @@ let actorsQuantity = {
     quantity:3,
     icon:'fa-user-check'
 }
+
 
 let cartProps = [moviesInDB, totalAwards, actorsQuantity];
 
